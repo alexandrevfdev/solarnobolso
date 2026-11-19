@@ -1,0 +1,659 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solar no Bolso — Como lucrar com placas solares</title>
+<meta name="description" content="Aprenda a limpar placas solares com segurança, cobrar o preço certo e conseguir os primeiros clientes. E-book + bônus a partir de R$ 9,90.">
+<meta property="og:title" content="Solar no Bolso — Como lucrar com placas solares">
+<meta property="og:description" content="Renda extra com limpeza de placas solares. E-book + bônus a partir de R$ 9,90.">
+<meta property="og:image" content="og.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Montserrat:wght@700;800;900&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F7F9FC}
+a{color:#1565C0}a:hover{color:#0D47A1}
+.gridbg{background-color:#F7F9FC;background-image:linear-gradient(#E6ECF4 1px,transparent 1px),linear-gradient(90deg,#E6ECF4 1px,transparent 1px);background-size:28px 28px}
+.dirt{background-color:rgba(112,86,50,0.82);background-image:radial-gradient(circle at 18% 30%,rgba(70,52,28,0.9) 0 6%,transparent 7%),radial-gradient(circle at 62% 70%,rgba(80,60,30,0.85) 0 5%,transparent 6%),radial-gradient(circle at 80% 22%,rgba(235,230,220,0.75) 0 3%,transparent 4%),radial-gradient(circle at 35% 82%,rgba(235,230,220,0.7) 0 2.5%,transparent 3.5%),radial-gradient(circle at 48% 40%,rgba(90,66,34,0.6) 0 12%,transparent 13%)}
+.cell{background:linear-gradient(160deg,#1E4E8C 0%,#163D70 55%,#12325C 100%);border:1px solid #8FA9C7}
+.cover{background:linear-gradient(165deg,#0B2545 0%,#13315C 55%,#1B4A85 100%)}
+.spine{background:linear-gradient(90deg,#06182F 0%,#0B2545 100%)}
+.sun{background:radial-gradient(circle,#FFE29A 0%,#F5B23D 55%,#E8901A 100%)}
+.mini{background:linear-gradient(160deg,#2B6CC4,#174A8B);border:1px solid #9DB8D9}
+.cta{background:#15803D;box-shadow:0 8px 20px rgba(21,128,61,0.28)}
+.cta:hover{background:#166534}
+.sc-stage{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;border-radius:18px;background:#152a3a;perspective:1000px;box-shadow:0 20px 50px rgba(0,0,0,0.35);isolation:isolate}
+.sc-scene{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:radial-gradient(ellipse at 50% 0%,#557b91 0%,transparent 65%),linear-gradient(145deg,#203e50,#101e2a)}
+.sc-panel{position:relative;width:86%;height:68%;transform:rotateX(12deg) rotateZ(-3deg);transform-style:preserve-3d;border:7px solid #a6b5bd;border-radius:7px;background:#101d2c;box-shadow:0 22px 35px rgba(0,0,0,0.6),inset 0 0 0 2px #d6e1e4;overflow:hidden}
+.sc-cells{position:absolute;inset:0;background-color:#102b48;background-image:repeating-linear-gradient(90deg,transparent 0,transparent calc(16.666% - 2px),#8ba7b7 16.666%),repeating-linear-gradient(0deg,transparent 0,transparent calc(25% - 2px),#8ba7b7 25%),linear-gradient(135deg,#183c60,#071b30);box-shadow:inset 0 0 30px rgba(0,0,0,0.55)}
+.sc-cells::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 15%,rgba(255,255,255,0.15) 40%,transparent 65%)}
+.sc-dirt{position:absolute;inset:0;z-index:2;background:radial-gradient(ellipse at 15% 25%,rgba(195,167,123,0.6) 0 2%,transparent 13%),radial-gradient(ellipse at 72% 65%,rgba(192,160,120,0.6) 0 3%,transparent 17%),radial-gradient(ellipse at 42% 85%,rgba(143,121,92,0.6) 0 2%,transparent 12%),radial-gradient(ellipse at 88% 20%,rgba(197,173,129,0.6) 0 3%,transparent 15%),radial-gradient(circle at 30% 55%,rgba(139,120,92,0.6) 0 1%,transparent 9%),linear-gradient(135deg,rgba(162,139,110,0.67),rgba(85,74,59,0.67));opacity:.95}
+.sc-dirt::after{content:"";position:absolute;inset:0;background:repeating-radial-gradient(ellipse at 30% 40%,rgba(216,194,154,0.33) 0 1px,transparent 2px 13px),linear-gradient(110deg,rgba(211,189,148,0.33),transparent 40%,rgba(69,59,45,0.4));mix-blend-mode:multiply}
+.sc-divider{position:absolute;z-index:5;top:0;bottom:0;width:3px;background:#fff;transform:translateX(-50%);pointer-events:none;box-shadow:0 0 12px rgba(0,0,0,0.5)}
+.sc-handle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:48px;height:48px;border:3px solid #fff;border-radius:50%;background:#f4a62a;display:flex;justify-content:center;align-items:center;box-shadow:0 3px 15px rgba(0,0,0,0.5)}
+.sc-label{position:absolute;top:18px;z-index:6;padding:9px 15px;border-radius:5px;font-size:12px;font-weight:800;letter-spacing:1px;color:#fff;pointer-events:none}
+.sc-stage input.sc-range{position:absolute;top:0;left:0;right:0;bottom:0;z-index:10;width:100% !important;height:100% !important;margin:0;padding:0;opacity:0;cursor:ew-resize;touch-action:pan-y;-webkit-appearance:none;appearance:none}
+.sc-stage input.sc-range::-webkit-slider-thumb{-webkit-appearance:none;width:48px;height:2000px}
+.sc-stage input.sc-range::-moz-range-thumb{width:48px;height:2000px;border:0}
+@media(max-width:600px){.sc-stage{aspect-ratio:4/3;border-radius:12px}.sc-panel{width:92%;height:60%;border-width:4px}.sc-label{top:10px;padding:7px 9px;font-size:10px}.sc-handle{width:40px;height:40px}}
+
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.track{display:flex;gap:20px;width:max-content;padding:0 10px;animation:marquee 50s linear infinite}
+.track:hover{animation-play-state:paused}
+@media (prefers-reduced-motion: reduce){.track{animation:none}}
+
+.fadeimg{-webkit-mask-image:linear-gradient(180deg,#000 85%,transparent 100%);mask-image:linear-gradient(180deg,#000 85%,transparent 100%)}
+input[type=range]{accent-color:#1565C0;width:100%;height:44px;cursor:pointer}
+</style>
+<style>[v-cloak]{display:none}</style>
+<!-- META PIXEL: cole aqui o código do seu Pixel da Meta -->
+</head>
+<body>
+<div id="app" v-cloak>
+<div style="font-family: Inter, system-ui, sans-serif; color: #0B2545; background: #F7F9FC; width: 100%; line-height: 1.55">
+
+<!-- BARRA TOPO -->
+<div style="background: #0B2545; color: #FFFFFF; text-align: center; padding: 11px 16px; font-size: 13px; font-weight: 700; letter-spacing: 0.08em; display: flex; justify-content: center; align-items: center; gap: 10px">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5B23D" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
+<span>ENERGIA SOLAR · RENDA EXTRA COM LIMPEZA DE PLACAS</span>
+</div>
+
+<!-- HERO -->
+<section class="gridbg">
+<div style="max-width: 1100px; margin: 0 auto; padding: 48px 20px 64px; display: flex; flex-direction: column; align-items: center; gap: 26px; text-align: center">
+<div style="background: #E8F1FC; border: 1px solid #BFD6F2; color: #1565C0; font-size: 13px; font-weight: 600; padding: 6px 16px; border-radius: 999px">Solar no Bolso · E-book + 4 bônus</div>
+<h1 style="margin: 0; font-family: Montserrat, sans-serif; font-weight: 900; font-size: clamp(32px, 5.2vw, 56px); line-height: 1.08; max-width: 900px">Aprenda a <span style="color: #1565C0">limpar placas solares</span> e faça renda extra neste verão</h1>
+
+<img src="kit.webp" alt="Kit Solar no Bolso: e-book, versão no celular e materiais do pacote" style="width: 100%; max-width: 860px; height: auto; display: block; filter: drop-shadow(0 24px 40px rgba(11,37,69,0.22))">
+
+<p style="margin: 0; font-size: 19px; color: #34465C; max-width: 720px">O passo a passo para limpar placas solares sem riscar o vidro, trabalhar no telhado com segurança, cobrar o preço certo e conseguir os primeiros clientes na sua cidade.</p>
+<a href="#planos" class="cta" style="color: #FFFFFF; text-decoration: none; font-weight: 800; font-size: 18px; padding: 18px 40px; border-radius: 12px; display: inline-block; letter-spacing: 0.02em">QUERO COMEÇAR AGORA</a>
+<div style="font-size: 14px; color: #4B5B70; display: flex; gap: 18px; flex-wrap: wrap; justify-content: center">
+<span>Acesso imediato</span><span aria-hidden="true">·</span><span>Compra segura</span><span aria-hidden="true">·</span><span>Garantia de 7 dias</span>
+</div>
+</div>
+</section>
+
+<!-- POR DENTRO -->
+<section style="background: #FFFFFF; border-top: 1px solid #E3E8F0; border-bottom: 1px solid #E3E8F0">
+<div style="padding: 72px 0; display: flex; flex-direction: column; gap: 24px; align-items: center">
+<h2 style="margin: 0; padding: 0 20px; text-align: center; font-family: Montserrat, sans-serif; font-weight: 900; font-size: clamp(28px, 4vw, 40px)">Veja os mapas visuais <span style="color: #1565C0">por dentro</span></h2>
+<p style="margin: 0; padding: 0 20px; color: #4B5B70; text-align: center; max-width: 640px">Cada capítulo do e-book vem com um mapa visual para consultar no celular ou imprimir. Toque em um mapa para ver em tamanho grande.</p>
+<div class="marquee-wrap" style="width: 100%; overflow-x: auto; padding: 10px 0 18px">
+<div class="track">
+<template v-for="mp in V.mapsLoop">
+<button type="button" @click="mp.open" :aria-label="`Ampliar mapa: ${mp.title}`" style="flex: none; width: 280px; background: #FFFFFF; border: 1px solid #E3E8F0; border-radius: 16px; padding: 10px; cursor: zoom-in; box-shadow: 0 10px 24px rgba(11,37,69,0.12); display: flex; flex-direction: column; gap: 10px; font: inherit; color: #0B2545">
+<img :src="mp.src" :alt="mp.title" style="width: 100%; height: 360px; object-fit: cover; object-position: top; border-radius: 10px; display: block">
+<span style="font-weight: 800; font-size: 16px; text-align: center; width: 100%">{{ mp.title }}</span>
+</button>
+</template>
+</div>
+</div>
+<div style="font-size: 12px; color: #4B5B70; padding: 0 20px; text-align: center">Imagens ilustrativas do material. Siga sempre o manual do fabricante das placas.</div>
+<a href="#planos" class="cta" style="color: #FFFFFF; text-decoration: none; font-weight: 800; font-size: 16px; padding: 16px 32px; border-radius: 12px; display: inline-block">QUERO TER ACESSO AGORA</a>
+</div>
+<div style="display:contents" v-if="V.zoomOpen">
+<div style="position: fixed; inset: 0; background: rgba(5,12,24,0.88); z-index: 50; display: flex; align-items: center; justify-content: center; gap: 12px; padding: 20px; box-sizing: border-box">
+<button type="button" @click="V.zoomPrev" aria-label="Mapa anterior" style="flex: none; width: 48px; height: 48px; border-radius: 50%; border: 0; background: #FFFFFF; cursor: pointer; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0B2545" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"></path></svg></button>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 12px; min-width: 0">
+<img :src="V.zoomSrc" :alt="V.zoomTitle" style="max-width: 100%; max-height: 80vh; border-radius: 12px; display: block">
+<div style="color: #FFFFFF; font-weight: 800">{{ V.zoomTitle }}</div>
+</div>
+<button type="button" @click="V.zoomNext" aria-label="Próximo mapa" style="flex: none; width: 48px; height: 48px; border-radius: 50%; border: 0; background: #FFFFFF; cursor: pointer; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0B2545" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg></button>
+<button type="button" @click="V.zoomClose" aria-label="Fechar" style="position: absolute; top: 16px; right: 16px; width: 48px; height: 48px; border-radius: 50%; border: 0; background: #F5B23D; cursor: pointer; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1A1300" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></button>
+</div>
+</div>
+</section>
+
+<!-- DORES -->
+<section style="max-width: 760px; margin: 0 auto; padding: 72px 20px; display: flex; flex-direction: column; gap: 14px">
+<h2 style="margin: 0 0 14px; text-align: center; font-family: Montserrat, sans-serif; font-weight: 900; font-size: clamp(28px, 4vw, 40px); line-height: 1.15">Sua situação <span style="color: #1565C0">também é assim?</span></h2>
+<template v-for="p in V.pains">
+<div style="background: #FFFFFF; border: 1px solid #E3E8F0; border-radius: 12px; padding: 16px 18px; display: flex; gap: 14px; align-items: center; box-shadow: 0 2px 6px rgba(11,37,69,0.05)">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C62828" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" style="flex: none"><circle cx="12" cy="12" r="9"></circle><path d="M15 9l-6 6M9 9l6 6"></path></svg>
+<span style="font-size: 16px; color: #34465C">{{ p.t }}</span>
+</div>
+</template>
+<div style="margin-top: 10px; background: #0B2545; color: #FFFFFF; border-radius: 14px; padding: 20px 22px; text-align: center; font-weight: 700; font-size: 18px">Existe um serviço com procura, que se aprende rápido e que quase ninguém oferece direito.</div>
+</section>
+
+<!-- ANTES / DEPOIS -->
+<section style="background: #0B2545; color: #FFFFFF">
+<div style="max-width: 1060px; margin: 0 auto; padding: 72px 20px; display: flex; flex-direction: column; gap: 22px">
+<div style="text-align: center; display: flex; flex-direction: column; gap: 10px; align-items: center">
+<div style="color: #F5B23D; font-weight: 800; font-size: 13px; letter-spacing: 0.12em">VEJA A DIFERENÇA DA LIMPEZA</div>
+<h2 style="margin: 0; font-family: Montserrat, sans-serif; font-weight: 900; font-size: clamp(28px, 4vw, 40px); line-height: 1.12; max-width: 820px">Placa suja gera menos, e o dono paga a diferença na conta de luz</h2>
+<p style="margin: 0; color: #C9D6E6; font-size: 17px; max-width: 720px">O Brasil já tem cerca de 4,7 milhões de sistemas solares, e estudos medem perdas de até ~20% com sujeira acumulada. Arraste e veja o que a sua limpeza devolve ao cliente.</p>
+</div>
+<div class="sc-stage">
+<div class="sc-scene">
+<div class="sc-panel">
+<div class="sc-cells"></div>
+<div class="sc-dirt" :style="`clip-path: inset(0 ${V.dirtRight}% 0 0)`"></div>
+</div>
+</div>
+<div class="sc-label" style="left: 18px; background: #A66C2C">ANTES</div>
+<div class="sc-label" style="right: 18px; background: #168C64">DEPOIS</div>
+<div class="sc-divider" :style="`left: ${V.split}%`">
+<div class="sc-handle">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#17232B" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"></path></svg>
+</div>
+</div>
+<input class="sc-range" type="range" min="0" max="100" :value="V.split" @input="V.onSplit" aria-label="Arraste para comparar o painel solar sujo e limpo">
+</div>
+<div style="display: flex; justify-content: center; gap: 18px; flex-wrap: wrap; align-items: center; font-size: 14px">
+<span style="color: #C9D6E6; display: flex; align-items: center; gap: 8px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F5B23D" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 8l-4 4 4 4M17 8l4 4-4 4M3 12h18"></path></svg>Arraste a barra para ver a transformação</span>
+<span :style="`font-weight: 800; color: ${V.lossColor}`">{{ V.lossLabel }}</span>
+</div>
+</div>
+</section>
+
+<!-- O QUE RECEBE -->
+<section style="max-width: 1100px; margin: 0 auto; padding: 72px 20px; display: flex; flex-direction: column; gap: 28px">
+<h2 style="margin: 0; text-align: center; font-family: Montserrat, sans-serif; font-weight: 900; font-size: clamp(28px, 4vw, 40px)">O que você vai <span style="color: #1565C0">receber</span></h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px">
+<div style="background: #FFFFFF; border: 1px solid #E3E8F0; border-radius: 16px; padding: 26px; display: flex; flex-direction: column; gap: 10px; box-shadow: 0 4px 14px rgba(11,37,69,0.06)">
+<div style="width: 48px; height: 48px; border-radius: 12px; background: #E8F1FC; display: flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1565C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"></path><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"></path></svg></div>
+<div style="font-weight: 800; font-size: 19px">E-book em 7 capítulos</div>
+<div style="color: #4B5B70">Do mercado ao contrato de manutenção, direto ao ponto, sem enrolação.</div>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #E3E8F0; border-radius: 16px; padding: 26px; display: flex; flex-direction: column; gap: 10px; box-shadow: 0 4px 14px rgba(11,37,69,0.06)">
+<div style="width: 48px; height: 48px; border-radius: 12px; background: #E8F1FC; display: flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1565C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.2-8 9-4.6-.8-8-4.5-8-9V6z"></path><path d="M8.5 12l2.5 2.5 4.5-5"></path></svg></div>
+<div style="font-weight: 800; font-size: 19px">Segurança em primeiro lugar</div>
+<div style="color: #4B5B70">Checklists de telhado e as situações em que você deve recusar o serviço.</div>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #E3E8F0; border-radius: 16px; padding: 26px; display: flex; flex-direction: column; gap: 10px; box-shadow: 0 4px 14px rgba(11,37,69,0.06)">
+<div style="width: 48px; height: 48px; border-radius: 12px; background: #E8F1FC; display: flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1565C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"></rect><path d="M11 18h2"></path></svg></div>
+<div style="font-weight: 800; font-size: 19px">Consulte onde estiver</div>
+<div style="color: #4B5B70">Material digital para ler no celular, no computador ou imprimir.</div>
+</div>
+</div>
+</section>
+
+<!-- CAPITULOS -->
+<section style="background: #FFFFFF; border-top: 1px solid #E3E8F0; border-bottom: 1px solid #E3E8F0">
+<div style="max-width: 820px; margin: 0 auto; padding: 72px 20px; display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; text-align: center; font-family: Montserrat, sans-serif; font-weight: 900; font-size: clamp(28px, 4vw, 40px)">Do primeiro passo <span style="color: #1565C0">ao primeiro cliente</span></h2>
+<p style="margin: 0 0 14px; text-align: center; color: #4B5B70">Sete capítulos que seguem a ordem do seu caminho.</p>
+<template v-for="m in V.modules">
+<div style="background: #F7F9FC; border: 1px solid #E3E8F0; border-radius: 14px; overflow: hidden">
+<button type="button" @click="m.toggle" :aria-expanded="m.open" style="width: 100%; min-height: 64px; background: transparent; border: 0; color: #0B2545; font: inherit; text-align: left; padding: 16px 20px; display: flex; gap: 16px; align-items: center; cursor: pointer">
+<span style="background: #1565C0; color: #FFFFFF; font-weight: 800; font-size: 12px; padding: 4px 10px; border-radius: 999px; white-space: nowrap">Capítulo {{ m.num }}</span>
+<span style="flex: 1; font-weight: 700; font-size: 17px">{{ m.title }}</span>
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4B5B70" stroke-width="2" stroke-linecap="round" aria-hidden="true" :style="`transform: rotate(${m.rot}deg); transition: transform 0.2s`"><path d="M6 9l6 6 6-6"></path></svg>
+</button>
+<div style="display:contents" v-if="m.open">
+<div style="padding: 0 20px 18px; color: #4B5B70">{{ m.body }}</div>
+</div>
+</div>
+</template>
+<div style="display: flex; justify-content: center; margin-top: 14px">
+<a href="#planos" class="cta" style="color: #FFFFFF; text-decoration: none; font-weight: 800; font-size: 16px; padding: 16px 32px; border-radius: 12px; display: inline-block">QUERO ACESSAR</a>
+</div>
+</div>
+</section>
+
+<!-- PARA QUEM -->
+<section style="background: #0B2545; color: #FFFFFF">
+<div style="max-width: 1100px; margin: 0 auto; padding: 72px 20px; display: flex; flex-direction: column; gap: 28px">
+<div style="text-align: center; display: flex; flex-direction: column; gap: 8px">
+<div style="color: #F5B23D; font-weight: 800; font-size: 13px; letter-spacing: 0.12em">PARA QUEM É</div>
+<h2 style="margin: 0; font-family: Montserrat, sans-serif; font-weight: 900; font-size: clamp(28px, 4vw, 40px)">Para quem é <span style="color: #F5B23D">este material</span></h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px">
+<template v-for="a in V.audience">
+<div style="background: #13315C; border: 1px solid #24426E; border-radius: 16px; padding: 20px; display: flex; gap: 14px; align-items: center">
+<div style="flex: none; width: 46px; height: 46px; border-radius: 12px; background: #F5B23D; display: flex; align-items: center; justify-content: center">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1A1300" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"></path></svg>
+</div>
+<span style="color: #FFFFFF; font-size: 16px; font-weight: 600">{{ a.t }}</span>
+</div>
+</template>
+</div>
+<div style="display: flex; justify-content: center">
+<a href="#planos" class="cta" style="color: #FFFFFF; text-decoration: none; font-weight: 800; font-size: 16px; padding: 16px 32px; border-radius: 12px; display: inline-block">ESSE MATERIAL É PARA MIM</a>
+</div>
+</div>
+</section>
+
+<!-- CALCULADORA -->
+<section id="calculadora" class="gridbg" style="border-top: 1px solid #E3E8F0; border-bottom: 1px solid #E3E8F0">
+<div style="max-width: 1100px; margin: 0 auto; padding: 72px 20px; display: flex; flex-wrap: wrap; gap: 44px; align-items: center">
+<div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+<div style="color: #1565C0; font-weight: 800; font-size: 13px; letter-spacing: 0.12em">SIMULADOR</div>
+<h2 style="margin: 0; font-family: Montserrat, sans-serif; font-weight: 900; font-size: clamp(28px, 4vw, 40px); line-height: 1.12">Quanto isso pode render <span style="color: #1565C0">no seu mês?</span></h2>
+<p style="margin: 0; font-size: 17px; color: #4B5B70">Mexa nos controles e veja o faturamento mudar. Dá para começar só nos fins de semana.</p>
+</div>
+<div style="flex: 1 1 420px; min-width: 0; background: #FFFFFF; border: 1px solid #E3E8F0; border-radius: 18px; padding: 26px; display: flex; flex-direction: column; gap: 16px; box-shadow: 0 10px 30px rgba(11,37,69,0.10)">
+<div style="display: flex; justify-content: space-between; font-weight: 700"><label for="calc-qtd">Limpezas por semana</label><span>{{ V.jobs }}</span></div>
+<input id="calc-qtd" type="range" min="1" max="15" :value="V.jobs" @input="V.onJobs">
+<div style="display: flex; justify-content: space-between; font-weight: 700"><label for="calc-preco">Preço médio por limpeza</label><span>R$ {{ V.price }}</span></div>
+<input id="calc-preco" type="range" min="150" max="450" step="10" :value="V.price" @input="V.onPrice">
+<div style="background: #0B2545; color: #FFFFFF; border-radius: 14px; padding: 22px; display: flex; flex-direction: column; gap: 4px">
+<div style="font-size: 14px; color: #C9D6E6">Faturamento bruto estimado por mês</div>
+<div style="font-family: Montserrat, sans-serif; font-size: 44px; font-weight: 900; color: #F5B23D">{{ V.monthly }}</div>
+<div style="font-size: 14px; color: #C9D6E6">{{ V.yearly }} por ano · {{ V.jobsMonth }} limpezas no mês</div>
+</div>
+<p style="margin: 0; font-size: 12px; color: #4B5B70">Simulação de faturamento bruto, antes de materiais, deslocamento e impostos. Não é promessa de ganho: o resultado depende da sua dedicação, da sua região e da procura local.</p>
+</div>
+</div>
+</section>
+
+<!-- BONUS -->
+<section style="max-width: 1100px; margin: 0 auto; padding: 72px 20px; display: flex; flex-direction: column; gap: 24px">
+<div style="text-align: center; display: flex; flex-direction: column; gap: 8px">
+<h2 style="margin: 0; font-family: Montserrat, sans-serif; font-weight: 900; font-size: clamp(28px, 4vw, 40px)">Bônus <span style="color: #1565C0">exclusivos</span></h2>
+<p style="margin: 0; color: #4B5B70">Inclusos no Pacote Completo, sem custo adicional.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px">
+<template v-for="b in V.bonuses">
+<div style="background: #FFFFFF; border: 1px solid #E3E8F0; border-radius: 16px; overflow: hidden; display: flex; flex-direction: column; box-shadow: 0 4px 14px rgba(11,37,69,0.06)">
+<div class="cover" style="height: 120px; display: flex; align-items: center; justify-content: center; position: relative">
+<div style="position: absolute; top: 10px; left: 10px; background: #F5B23D; color: #1A1300; font-size: 11px; font-weight: 800; padding: 3px 9px; border-radius: 999px">BÔNUS {{ b.n }}</div>
+<div style="color: #FFFFFF; font-family: Montserrat, sans-serif; font-weight: 900; font-size: 18px; text-align: center; padding: 0 16px; line-height: 1.15">{{ b.title }}</div>
+</div>
+<div style="padding: 18px; display: flex; flex-direction: column; gap: 10px; flex: 1">
+<div style="color: #4B5B70; font-size: 15px; flex: 1">{{ b.desc }}</div>
+<div style="color: #15803D; font-weight: 800; font-size: 14px">GRÁTIS NO PACOTE COMPLETO</div>
+</div>
+</div>
+</template>
+</div>
+</section>
+
+<!-- 3 PASSOS -->
+<section style="background: #FFFFFF; border-top: 1px solid #E3E8F0; border-bottom: 1px solid #E3E8F0">
+<div style="max-width: 1100px; margin: 0 auto; padding: 72px 20px; display: flex; flex-direction: column; gap: 28px">
+<h2 style="margin: 0; text-align: center; font-family: Montserrat, sans-serif; font-weight: 900; font-size: clamp(28px, 4vw, 40px)">Do e-book ao primeiro cliente em <span style="color: #1565C0">3 passos</span></h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px">
+<div style="display: flex; flex-direction: column; gap: 10px; align-items: center; text-align: center; padding: 10px">
+<div style="width: 56px; height: 56px; border-radius: 50%; background: #1565C0; color: #FFFFFF; font-family: Montserrat, sans-serif; font-weight: 900; font-size: 24px; display: flex; align-items: center; justify-content: center">1</div>
+<div style="font-weight: 800; font-size: 19px">Aprenda</div>
+<div style="color: #4B5B70">Leia o e-book em um fim de semana e monte o kit inicial enxuto.</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; align-items: center; text-align: center; padding: 10px">
+<div style="width: 56px; height: 56px; border-radius: 50%; background: #1565C0; color: #FFFFFF; font-family: Montserrat, sans-serif; font-weight: 900; font-size: 24px; display: flex; align-items: center; justify-content: center">2</div>
+<div style="font-weight: 800; font-size: 19px">Pratique</div>
+<div style="color: #4B5B70">Faça as primeiras limpezas para conhecidos e junte fotos de antes e depois.</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; align-items: center; text-align: center; padding: 10px">
+<div style="width: 56px; height: 56px; border-radius: 50%; background: #1565C0; color: #FFFFFF; font-family: Montserrat, sans-serif; font-weight: 900; font-size: 24px; display: flex; align-items: center; justify-content: center">3</div>
+<div style="font-weight: 800; font-size: 19px">Divulgue</div>
+<div style="color: #4B5B70">Use as mensagens prontas e ofereça o plano de manutenção para cada cliente.</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- QUIZ -->
+<section style="max-width: 820px; margin: 0 auto; padding: 72px 20px; display: flex; flex-direction: column; gap: 16px">
+<div style="text-align: center; display: flex; flex-direction: column; gap: 8px; margin-bottom: 10px">
+<div style="color: #1565C0; font-weight: 800; font-size: 13px; letter-spacing: 0.12em">TESTE RÁPIDO</div>
+<h2 style="margin: 0; font-family: Montserrat, sans-serif; font-weight: 900; font-size: clamp(28px, 4vw, 40px); line-height: 1.12">Esse trabalho <span style="color: #1565C0">combina com você?</span></h2>
+</div>
+<template v-for="q in V.questions">
+<div style="background: #FFFFFF; border: 1px solid #E3E8F0; border-radius: 14px; padding: 18px 20px; display: flex; flex-wrap: wrap; gap: 14px; align-items: center; justify-content: space-between">
+<div style="flex: 1 1 300px; font-size: 16px; font-weight: 600">{{ q.text }}</div>
+<div style="display: flex; gap: 10px">
+<button type="button" @click="q.yes" :style="q.yesStyle">Sim</button>
+<button type="button" @click="q.no" :style="q.noStyle">Não</button>
+</div>
+</div>
+</template>
+<div style="display:contents" v-if="V.quizDone">
+<div style="background: #0B2545; color: #FFFFFF; border-radius: 14px; padding: 22px 24px; display: flex; flex-direction: column; gap: 6px">
+<div style="font-family: Montserrat, sans-serif; font-size: 22px; font-weight: 900; color: #F5B23D">{{ V.quizTitle }}</div>
+<div style="font-size: 16px; color: #E3EAF3">{{ V.quizText }}</div>
+</div>
+</div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section style="background: #FFFFFF; border-top: 1px solid #E3E8F0; border-bottom: 1px solid #E3E8F0">
+<div style="max-width: 1100px; margin: 0 auto; padding: 64px 20px; display: flex; flex-direction: column; gap: 22px">
+<h2 style="margin: 0; text-align: center; font-family: Montserrat, sans-serif; font-weight: 900; font-size: clamp(26px, 3.5vw, 36px)">Quem já começou, <span style="color: #1565C0">tem voz aqui</span></h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px">
+<div style="border: 2px dashed #BFCBDA; border-radius: 16px; padding: 22px; color: #4B5B70; font-size: 15px">[DEPOIMENTO REAL 1] Print ou vídeo de um aluno de verdade, com autorização dele.</div>
+<div style="border: 2px dashed #BFCBDA; border-radius: 16px; padding: 22px; color: #4B5B70; font-size: 15px">[DEPOIMENTO REAL 2] Antes e depois de uma limpeza feita por um aluno.</div>
+<div style="border: 2px dashed #BFCBDA; border-radius: 16px; padding: 22px; color: #4B5B70; font-size: 15px">[DEPOIMENTO REAL 3] Print da conversa com o primeiro cliente fechado.</div>
+</div>
+</div>
+</section>
+
+<!-- APP -->
+<section style="background: #0B2545; color: #FFFFFF">
+<div style="max-width: 1100px; margin: 0 auto; padding: 72px 20px; display: flex; flex-wrap: wrap; gap: 44px; align-items: center">
+<div style="flex: 1 1 400px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<div style="align-self: flex-start; background: #F5B23D; color: #1A1300; font-size: 12px; font-weight: 800; letter-spacing: 0.08em; padding: 5px 12px; border-radius: 999px">EXCLUSIVO DO PACOTE COMPLETO</div>
+<h2 style="margin: 0; font-family: Montserrat, sans-serif; font-weight: 900; font-size: clamp(28px, 4vw, 40px); line-height: 1.12">Estamos desenvolvendo o <span style="color: #F5B23D">App Solar no Bolso</span></h2>
+<p style="margin: 0; color: #C9D6E6; font-size: 17px">Um gerencial feito para quem faz limpeza de placas: clientes, agenda, dinheiro e orçamentos, tudo no celular.</p>
+<template v-for="af in V.appFeatures">
+<div style="display: flex; gap: 12px; align-items: flex-start">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#8FE3AE" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 2px"><circle cx="12" cy="12" r="9"></circle><path d="M8 12l3 3 5-6"></path></svg>
+<span style="color: #E3EAF3"><strong style="color: #FFFFFF">{{ af.t }}</strong> {{ af.d }}</span>
+</div>
+</template>
+<div style="background: #13315C; border: 1px solid #24426E; border-radius: 12px; padding: 14px 16px; font-size: 14px; color: #C9D6E6">Em desenvolvimento, com previsão de lançamento para o começo de janeiro de 2027. Quem comprar o Pacote Completo recebe acesso ao app sem custo extra assim que ele for lançado. Telas ilustrativas.</div>
+</div>
+<div style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; align-items: center; gap: 16px">
+<div style="display: flex; gap: 8px; flex-wrap: wrap; justify-content: center">
+<template v-for="at in V.appTabs">
+<button type="button" @click="at.pick" :style="at.style">{{ at.label }}</button>
+</template>
+</div>
+<div style="width: 280px; height: 540px; background: #050B14; border-radius: 40px; padding: 12px; box-sizing: border-box; box-shadow: 0 30px 60px rgba(0,0,0,0.45)">
+<div style="background: #F7F9FC; color: #0B2545; border-radius: 30px; height: 100%; overflow: hidden; display: flex; flex-direction: column">
+<div style="background: #0B2545; color: #FFFFFF; padding: 22px 18px 14px; display: flex; flex-direction: column; gap: 2px">
+<div style="font-size: 11px; color: #F5B23D; font-weight: 800; letter-spacing: 0.1em">SOLAR NO BOLSO</div>
+<div style="font-family: Montserrat, sans-serif; font-weight: 800; font-size: 18px">{{ V.appTitle }}</div>
+</div>
+<div style="padding: 14px; display: flex; flex-direction: column; gap: 10px; flex: 1">
+<div style="display:contents" v-if="V.appIsClients">
+<template v-for="cl in V.appClients">
+<div style="background: #FFFFFF; border: 1px solid #E3E8F0; border-radius: 12px; padding: 11px 12px; display: flex; flex-direction: column; gap: 3px">
+<div style="font-weight: 700; font-size: 14px">{{ cl.n }}</div>
+<div style="font-size: 12px; color: #4B5B70">{{ cl.p }} placas · próxima limpeza {{ cl.d }}</div>
+</div>
+</template>
+</div>
+<div style="display:contents" v-if="V.appIsFin">
+<div style="background: #FFFFFF; border: 1px solid #E3E8F0; border-radius: 12px; padding: 14px; display: flex; flex-direction: column; gap: 4px">
+<div style="font-size: 12px; color: #4B5B70">Lucro do mês</div>
+<div style="font-family: Montserrat, sans-serif; font-weight: 900; font-size: 28px; color: #15803D">R$ 2.070</div>
+<div style="font-size: 12px; color: #4B5B70">Entradas R$ 2.380 · Gastos R$ 310</div>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #E3E8F0; border-radius: 12px; padding: 14px; display: flex; align-items: flex-end; gap: 10px; height: 140px; box-sizing: border-box">
+<template v-for="br in V.appBars">
+<div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px; height: 100%; justify-content: flex-end">
+<div :style="`width: 100%; height: ${br.h}%; background: #1565C0; border-radius: 4px 4px 0 0`"></div>
+<div style="font-size: 10px; color: #4B5B70">{{ br.m }}</div>
+</div>
+</template>
+</div>
+</div>
+<div style="display:contents" v-if="V.appIsQuote">
+<div style="background: #FFFFFF; border: 1px solid #E3E8F0; border-radius: 12px; padding: 14px; display: flex; flex-direction: column; gap: 8px; font-size: 13px">
+<div style="display: flex; justify-content: space-between"><span style="color: #4B5B70">Cliente</span><strong>Padaria Centro</strong></div>
+<div style="display: flex; justify-content: space-between"><span style="color: #4B5B70">Taxa de visita</span><strong>R$ 80</strong></div>
+<div style="display: flex; justify-content: space-between"><span style="color: #4B5B70">12 placas × R$ 12</span><strong>R$ 144</strong></div>
+<div style="display: flex; justify-content: space-between"><span style="color: #4B5B70">Telhado alto</span><strong>R$ 40</strong></div>
+<div style="height: 1px; background: #E3E8F0"></div>
+<div style="display: flex; justify-content: space-between; font-size: 16px"><span>Total</span><strong style="color: #1565C0">R$ 264</strong></div>
+</div>
+<div style="background: #15803D; color: #FFFFFF; text-align: center; font-weight: 800; font-size: 14px; padding: 13px; border-radius: 12px">Enviar orçamento pelo WhatsApp</div>
+<div style="background: #FFFFFF; border: 1px solid #E3E8F0; color: #0B2545; text-align: center; font-weight: 700; font-size: 13px; padding: 11px; border-radius: 12px">Baixar em PDF</div>
+</div>
+</div>
+</div>
+</div>
+<div style="font-size: 12px; color: #A9B8CB">Toque nas abas para ver as telas</div>
+</div>
+</div>
+</section>
+
+<!-- PLANOS -->
+<section id="planos" class="gridbg">
+<div style="max-width: 1000px; margin: 0 auto; padding: 72px 20px; display: flex; flex-direction: column; gap: 26px">
+<div style="text-align: center; display: flex; flex-direction: column; gap: 8px">
+<h2 style="margin: 0; font-family: Montserrat, sans-serif; font-weight: 900; font-size: clamp(28px, 4vw, 40px)">Garanta seu <span style="color: #1565C0">acesso</span></h2>
+<p style="margin: 0; color: #4B5B70">Escolha o seu pacote.</p>
+<div style="align-self: center; display: inline-flex; gap: 8px; align-items: center; background: #E9F7EE; border: 2px dashed #15803D; color: #14532D; font-weight: 800; font-size: 15px; padding: 10px 18px; border-radius: 12px">Cupom <span style="background: #15803D; color: #FFFFFF; padding: 3px 10px; border-radius: 6px; letter-spacing: 0.06em">SOLAR10</span> = 10% de desconto no checkout</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 22px; align-items: stretch; justify-content: center">
+
+<div style="flex: 1 1 300px; max-width: 400px; background: #FFFFFF; border: 1px solid #E3E8F0; border-radius: 18px; padding: 26px; display: flex; flex-direction: column; gap: 12px; box-shadow: 0 6px 18px rgba(11,37,69,0.08)">
+<div style="font-family: Montserrat, sans-serif; font-weight: 900; font-size: 22px">Pacote Básico</div>
+<img src="ebook.webp" alt="E-book Solar no Bolso" class="fadeimg" style="width: 70%; max-width: 240px; height: auto; display: block; margin: 4px auto 6px">
+<template v-for="it in V.basicItems">
+<div :style="`display: flex; gap: 10px; align-items: center; font-size: 15px; color: ${it.color}`">
+<div style="display:contents" v-if="it.ok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#15803D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><path d="M5 12l5 5L20 7"></path></svg></div>
+<div style="display:contents" v-if="it.no"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C62828" stroke-width="3" stroke-linecap="round" aria-hidden="true" style="flex: none"><path d="M6 6l12 12M18 6L6 18"></path></svg></div>
+<span :style="`text-decoration: ${it.deco}`">{{ it.t }}</span>
+</div>
+</template>
+<div style="background: #FDECEC; color: #B71C1C; font-size: 12px; font-weight: 800; text-align: center; padding: 7px; border-radius: 8px">SÓ O E-BOOK, SEM BÔNUS E SEM O APP</div>
+<div style="font-family: Montserrat, sans-serif; font-weight: 900; font-size: 36px; margin-top: auto">R$ 9<span style="font-size: 20px">,90</span></div>
+<div style="font-size: 13px; color: #4B5B70; margin-top: -10px">pagamento único</div>
+<a :href="V.checkoutBasico" style="border: 2px solid #0B2545; color: #0B2545; text-decoration: none; text-align: center; font-weight: 800; font-size: 16px; padding: 14px; border-radius: 12px; display: block">QUERO O BÁSICO</a>
+<a href="#completo" style="background: #E9F7EE; border: 1px solid #A7DDBA; color: #15803D; text-decoration: none; text-align: center; font-weight: 700; font-size: 13px; padding: 10px; border-radius: 10px; display: block">Ao lado há uma oferta mais vantajosa</a>
+</div>
+
+<div id="completo" style="flex: 1 1 340px; max-width: 440px; background: #FFFFFF; border: 3px solid #1565C0; border-radius: 18px; padding: 26px; display: flex; flex-direction: column; gap: 12px; box-shadow: 0 16px 40px rgba(21,101,192,0.22); position: relative">
+<div style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: #1565C0; color: #FFFFFF; font-size: 12px; font-weight: 800; padding: 5px 16px; border-radius: 999px; white-space: nowrap">MAIS ESCOLHIDO</div>
+<div style="font-family: Montserrat, sans-serif; font-weight: 900; font-size: 24px; text-align: center">Pacote Completo</div>
+<img src="kit.webp" alt="Pacote Completo Solar no Bolso" style="width: 100%; height: auto; display: block; border-radius: 10px">
+<template v-for="fi in V.fullItems">
+<div :style="`display: flex; gap: 10px; align-items: center; font-size: 15px; color: ${fi.color}; font-weight: ${fi.weight}`">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#15803D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><path d="M5 12l5 5L20 7"></path></svg>
+<span>{{ fi.t }}</span>
+</div>
+</template>
+<div style="text-align: center; margin-top: 6px">
+<div style="font-family: Montserrat, sans-serif; font-weight: 900; font-size: 48px; color: #1565C0; line-height: 1">R$ 14<span style="font-size: 24px">,90</span></div>
+<div style="font-size: 13px; color: #4B5B70; margin-top: 4px">pagamento único · acesso imediato</div>
+</div>
+<a :href="V.checkoutCompleto" class="cta" style="color: #FFFFFF; text-decoration: none; text-align: center; font-weight: 800; font-size: 18px; padding: 18px; border-radius: 12px; display: block">QUERO O PACOTE COMPLETO</a>
+<div style="text-align: center; font-size: 13px; color: #4B5B70">Compra 100% segura · Garantia de 7 dias</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section style="max-width: 820px; margin: 0 auto; padding: 72px 20px; display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0 0 14px; text-align: center; font-family: Montserrat, sans-serif; font-weight: 900; font-size: clamp(28px, 4vw, 40px)">Perguntas <span style="color: #1565C0">frequentes</span></h2>
+<template v-for="f in V.faqs">
+<div style="background: #FFFFFF; border: 1px solid #E3E8F0; border-radius: 14px; overflow: hidden">
+<button type="button" @click="f.toggle" :aria-expanded="f.open" style="width: 100%; min-height: 58px; background: transparent; border: 0; color: #0B2545; font: inherit; font-size: 16px; font-weight: 700; text-align: left; padding: 16px 20px; display: flex; gap: 16px; align-items: center; cursor: pointer">
+<span style="flex: 1">{{ f.q }}</span>
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4B5B70" stroke-width="2" stroke-linecap="round" aria-hidden="true" :style="`transform: rotate(${f.rot}deg); transition: transform 0.2s`"><path d="M6 9l6 6 6-6"></path></svg>
+</button>
+<div style="display:contents" v-if="f.open">
+<div style="padding: 0 20px 18px; color: #4B5B70">{{ f.a }}</div>
+</div>
+</div>
+</template>
+</section>
+
+<!-- GARANTIA + CTA FINAL -->
+<section style="background: #0B2545; color: #FFFFFF">
+<div style="max-width: 820px; margin: 0 auto; padding: 72px 20px; display: flex; flex-direction: column; gap: 22px; align-items: center; text-align: center">
+<div style="width: 110px; height: 110px; border-radius: 50%; border: 4px solid #F5B23D; display: flex; flex-direction: column; align-items: center; justify-content: center">
+<div style="font-family: Montserrat, sans-serif; font-weight: 900; font-size: 36px; color: #F5B23D; line-height: 1">7</div>
+<div style="font-size: 12px; font-weight: 800; letter-spacing: 0.1em">DIAS</div>
+</div>
+<h2 style="margin: 0; font-family: Montserrat, sans-serif; font-weight: 900; font-size: clamp(28px, 4vw, 40px)">Garantia de <span style="color: #F5B23D">7 dias</span></h2>
+<p style="margin: 0; color: #C9D6E6; font-size: 17px; max-width: 600px">Leia o e-book com calma. Se não gostar, peça o reembolso dentro do prazo e devolvemos 100% do seu dinheiro.</p>
+<div style="height: 1px; width: 100%; background: #24426E; margin: 10px 0"></div>
+<h3 style="margin: 0; font-family: Montserrat, sans-serif; font-weight: 900; font-size: clamp(24px, 3.4vw, 32px)">Pronto para começar antes da alta do verão?</h3>
+<a href="#planos" class="cta" style="color: #FFFFFF; text-decoration: none; font-weight: 800; font-size: 18px; padding: 18px 40px; border-radius: 12px; display: inline-block">QUERO TER ACESSO AGORA</a>
+</div>
+</section>
+
+<!-- RODAPE -->
+<footer style="max-width: 1100px; margin: 0 auto; padding: 36px 20px 48px; display: flex; flex-direction: column; gap: 10px; color: #4B5B70; font-size: 13px; text-align: center">
+<div style="font-weight: 800; color: #0B2545">Solar no Bolso · Como lucrar com placas solares</div>
+<div>Material educativo sobre limpeza de módulos solares. Não ensina instalação nem serviços elétricos e não substitui treinamento em trabalho em altura (NR-35) nem as instruções do fabricante.</div>
+<div>Fontes dos números: Aneel via fiis.com.br (sistemas de geração distribuída, out/2026); repositório UFU (perda por sujeira de até 20%).</div>
+<div>Solar no Bolso · Suporte: <a href="mailto:suporte@solarnobolso.com">suporte@solarnobolso.com</a> · © 2026</div>
+</footer>
+
+</div>
+</div>
+<script src="petite-vue.js"></script>
+<script>
+var PROPS = { checkoutBasico: 'https://pay.kiwify.com.br/lhRPx6z', checkoutCompleto: 'https://pay.kiwify.com.br/ZJu0nbT' };
+var Logic = {
+  constructor: function (props) {
+    this.state = { clean: 30, jobs: 4, price: 199, answers: [null, null, null], openMod: 0, openFaq: -1, chapter: 3, appTab: 0, zoom: -1, split: 50 };
+  },
+  brl: function (v) {
+    return 'R$ ' + v.toLocaleString('pt-BR', { minimumFractionDigits: 0, maximumFractionDigits: 2 });
+  },
+  renderVals: function () {
+    var s = this.state;
+    var self = this;
+    var dirt = 100 - s.clean;
+    var loss = Math.round(s.split / 100 * 20);
+    var cells = []; for (var i = 0; i < 24; i++) cells.push({ id: i });
+    var miniCells = []; for (var j = 0; j < 15; j++) miniCells.push({ id: j });
+
+    var chData = [
+      ['O mercado', 'O mercado e onde estão os clientes', 'Quem contrata limpeza de placas e como achar essas pessoas na sua cidade.', ['Residências, comércios e propriedades rurais', 'Como mapear placas pelo Google Maps', 'Parcerias com instaladoras', 'O argumento que fecha o serviço']],
+      ['Kit inicial', 'Kit inicial enxuto', 'Comece com o essencial e compre o resto com o dinheiro dos primeiros serviços.', ['Lista de equipamentos de segurança', 'Ferramentas certas para não riscar o vidro', 'O que NÃO comprar', 'Quando usar água desmineralizada']],
+      ['Segurança', 'Segurança em telhado', 'O capítulo mais importante: como trabalhar em altura sem correr riscos.', ['Checklist antes de subir', 'Onde pisar (e onde nunca pisar)', 'Por que a parte elétrica não é sua', 'Quando recusar o serviço']],
+      ['Passo a passo', 'Passo a passo da limpeza', 'O roteiro de 10 etapas que você repete em todo serviço.', ['O horário certo para limpar', 'Inspeção visual antes de começar', 'Técnica de cima para baixo', 'Erros que custam caro']],
+      ['Quanto cobrar', 'Quanto cobrar', 'A fórmula de orçamento que garante lucro até nos serviços pequenos.', ['Taxa de visita + valor por placa + adicionais', 'Exemplo de orçamento pronto', 'Como descobrir o preço da sua cidade', 'Pacotes semestral e trimestral']],
+      ['Primeiros clientes', 'Primeiros clientes', 'Um plano de 3 semanas para sair do zero às primeiras limpezas pagas.', ['WhatsApp Business e Google Meu Negócio', 'Porta a porta com foto', 'Mensagem pronta para o WhatsApp', 'Como pedir avaliação e indicação']],
+      ['Renda recorrente', 'Contrato de manutenção', 'Transforme cada cliente em 2 a 4 visitas por ano sem vender de novo.', ['Como oferecer o plano na entrega', 'O que o contrato precisa ter', 'A conta que muda o jogo', 'Como organizar a agenda']]
+    ];
+    var chipOn = 'min-height: 44px; padding: 0 16px; border-radius: 999px; font: inherit; font-size: 14px; font-weight: 700; cursor: pointer; background: #1565C0; color: #FFFFFF; border: 2px solid #1565C0;';
+    var chipOff = 'min-height: 44px; padding: 0 16px; border-radius: 999px; font: inherit; font-size: 14px; font-weight: 700; cursor: pointer; background: #FFFFFF; color: #0B2545; border: 2px solid #D5DEEA;';
+    var chapters = chData.map(function (c, idx) {
+      return { short: (idx + 1) + '. ' + c[0], chipStyle: s.chapter === idx ? chipOn : chipOff, pick: function () { self.setState({ chapter: idx }); } };
+    });
+    var cc = chData[s.chapter];
+    var curChapter = { label: 'CAPÍTULO ' + (s.chapter + 1), title: cc[1], lead: cc[2], points: cc[3].map(function (t) { return { t: t }; }) };
+
+    var phoneSteps = ['Leia o manual', 'Foto do antes', 'Inspeção visual', 'Molhe sem pressão', 'Escove de cima p/ baixo', 'Enxágue e rodo'].map(function (t, k) { return { n: k + 1, t: t }; });
+
+    var pains = [
+      'O dinheiro do mês não está fechando e você precisa de uma renda extra.',
+      'Você tem tempo livre no fim de semana, mas não sabe o que fazer com ele.',
+      'Os cursos que aparecem são caros, longos e cheios de teoria.',
+      'Você até pensou em prestar serviço, mas não sabe por onde começar nem quanto cobrar.'
+    ].map(function (t) { return { t: t }; });
+
+    var audience = [
+      'Quem quer uma renda extra nos fins de semana',
+      'Quem já faz bicos e quer um serviço novo para oferecer',
+      'Eletricistas e técnicos que querem atender a demanda solar',
+      'Quem trabalha com limpeza ou manutenção e quer cobrar mais',
+      'Moradores do interior, onde a poeira suja as placas mais rápido',
+      'Quem quer começar com pouco investimento'
+    ].map(function (t) { return { t: t }; });
+
+    var mods = chData.map(function (c, idx) {
+      var open = s.openMod === idx;
+      return { num: idx + 1, title: c[1], body: c[2] + ' ' + c[3].join(' · ') + '.', open: open, rot: open ? 180 : 0, toggle: function () { self.setState({ openMod: open ? -1 : idx }); } };
+    });
+
+    var bonuses = [
+      ['Checklist de Campo', 'Uma folha para imprimir ou salvar no celular e conferir em todo serviço, da segurança à entrega.'],
+      ['Kit de Divulgação', 'Mensagens prontas de WhatsApp, modelo de panfleto e roteiro para abordar instaladoras.'],
+      ['Modelo de Contrato', 'Contrato de manutenção semestral e trimestral para preencher e transformar clientes em renda recorrente.'],
+      ['Planilha de Agenda', 'Controle de clientes, datas das próximas limpezas e orçamento calculado automaticamente.']
+    ].map(function (b, k) { return { n: k + 1, title: b[0], desc: b[1] }; });
+
+    var basicItems = [
+      ['E-book Solar no Bolso', true],
+      ['Acesso digital', true]
+    ].map(function (x) { return { t: x[0], ok: x[1], no: !x[1], color: x[1] ? '#0B2545' : '#8A97A6', deco: x[1] ? 'none' : 'line-through' }; });
+
+    var fullItems = [
+      ['E-book Solar no Bolso (7 capítulos)', false],
+      ['Leitura no celular + impressão', false],
+      ['Acesso imediato', false],
+      ['BÔNUS: Checklist de Campo', true],
+      ['BÔNUS: Kit de Divulgação', true],
+      ['BÔNUS: Modelo de Contrato', true],
+      ['BÔNUS: Planilha de Agenda', true],
+      ['EXCLUSIVO: App Solar no Bolso (previsão: jan/2027)', true]
+    ].map(function (x) { return { t: x[0], color: x[1] ? '#15803D' : '#0B2545', weight: x[1] ? 800 : 500 }; });
+
+    var qTexts = [
+      'Você tem algumas horas livres na semana ou nos fins de semana?',
+      'Topa trabalhar ao ar livre e subir em telhado usando equipamento de segurança?',
+      'Gosta de aprender algo prático e colocar a mão na massa?'
+    ];
+    var base = 'min-width: 72px; min-height: 44px; border-radius: 10px; font: inherit; font-weight: 700; cursor: pointer; padding: 0 18px;';
+    var on = base + ' background: #1565C0; color: #FFFFFF; border: 2px solid #1565C0;';
+    var off = base + ' background: #FFFFFF; color: #0B2545; border: 2px solid #D5DEEA;';
+    var questions = qTexts.map(function (t, idx) {
+      var setA = function (val) { return function () { var a = s.answers.slice(); a[idx] = val; self.setState({ answers: a }); }; };
+      return { text: t, yes: setA(true), no: setA(false), yesStyle: s.answers[idx] === true ? on : off, noStyle: s.answers[idx] === false ? on : off };
+    });
+    var done = s.answers.every(function (a) { return a !== null; });
+    var yes = s.answers.filter(function (a) { return a === true; }).length;
+    var quizTitle = yes === 3 ? 'Perfil ideal: você pode começar já neste verão.' : yes === 2 ? 'Bom perfil: com um ajuste, você está pronto.' : 'Talvez não seja o momento.';
+    var quizText = yes === 3 ? 'Você tem tempo, disposição e vontade de aprender. O e-book mostra o caminho até o primeiro cliente.' : yes === 2 ? 'O e-book ajuda justamente no ponto que falta: segurança, passo a passo ou como encaixar o serviço na sua rotina.' : 'Esse trabalho pede tempo e disposição para o telhado. Seja honesto com você antes de comprar.';
+
+    var faqData = [
+      ['Como vou receber o material?', 'Logo após a confirmação do pagamento, você recebe o acesso por e-mail.'],
+      ['Posso ler no celular ou imprimir?', 'Sim. O e-book e os bônus funcionam no celular, no tablet e no computador, e podem ser impressos.'],
+      ['Preciso ter experiência?', 'Não. O e-book foi pensado para quem nunca trabalhou com energia solar. A limpeza é o serviço mais simples do setor.'],
+      ['Preciso de curso técnico ou certificação?', 'Para a limpeza, o e-book cobre o essencial e recomenda um curso de NR-35 para trabalho em altura. Instalação e serviços elétricos são outra coisa: o material deixa claro onde parar.'],
+      ['O e-book garante que vou ganhar dinheiro?', 'Não. Ele ensina o serviço e como conseguir clientes. O resultado depende da sua dedicação e da procura na sua região.'],
+      ['O que é o App Solar no Bolso?', 'Um aplicativo que estamos desenvolvendo para controle de clientes, agenda, finanças e orçamentos enviados direto ao cliente. Ele é exclusivo do Pacote Completo: quem compra recebe o acesso sem custo extra quando ele for lançado. A previsão de lançamento é o começo de janeiro de 2027.'],
+      ['E se eu não gostar?', 'Você tem 7 dias de garantia. Pediu dentro do prazo, recebe 100% do valor de volta.']
+    ];
+    var faqs = faqData.map(function (f, idx) {
+      var open = s.openFaq === idx;
+      return { q: f[0], a: f[1], open: open, rot: open ? 180 : 0, toggle: function () { self.setState({ openFaq: open ? -1 : idx }); } };
+    });
+
+    var tabOn = 'min-height: 44px; padding: 0 16px; border-radius: 999px; font: inherit; font-size: 14px; font-weight: 700; cursor: pointer; background: #F5B23D; color: #1A1300; border: 2px solid #F5B23D;';
+    var tabOff = 'min-height: 44px; padding: 0 16px; border-radius: 999px; font: inherit; font-size: 14px; font-weight: 700; cursor: pointer; background: transparent; color: #FFFFFF; border: 2px solid #3A5A86;';
+    var appTabs = ['Clientes', 'Finanças', 'Orçamento'].map(function (l, k) { return { label: l, style: s.appTab === k ? tabOn : tabOff, pick: function () { self.setState({ appTab: k }); } }; });
+    var appFeatures = [
+      ['Controle de clientes:', 'cadastro, endereço, número de placas e histórico de cada limpeza.'],
+      ['Agenda inteligente:', 'lembrete da próxima limpeza de cada cliente do plano de manutenção.'],
+      ['Finanças do negócio:', 'entradas, gastos e lucro do mês, sem planilha.'],
+      ['Orçamento em segundos:', 'monte o valor e envie para o cliente pelo WhatsApp ou em PDF.']
+    ].map(function (f) { return { t: f[0], d: f[1] }; });
+    var appClients = [['Residência Jardim', 12, '15/01'], ['Padaria Centro', 24, '22/01'], ['Sítio Boa Vista', 30, '03/02'], ['Casa Vila Nova', 8, '10/02']].map(function (c) { return { n: c[0], p: c[1], d: c[2] }; });
+    var appBars = [['Ago', 35], ['Set', 48], ['Out', 55], ['Nov', 70], ['Dez', 88], ['Jan', 100]].map(function (b) { return { m: b[0], h: b[1] }; });
+
+    var mapIds = ['a4b56f3d125761e6de24c02aced70491', 'f4929bb7051d47366de1d312231feb28', 'de618ef5dfac02258785184d563fbefd', 'd7f0b99a9d233f67a0bf5e95914eda2b', '82183740a3d460c77b0a5d02a7823e01', '4ce75b0d076ae5c9e5831b53f33c169d', 'c3060921f3223436f088a93874ea9a36'];
+    var mapTitles = ['1. Passo a passo da limpeza', '2. Segurança no telhado', '3. Kit inicial', '4. Fórmula do orçamento', '5. Erros que custam caro', '6. Primeiros clientes', '7. Plano de manutenção'];
+    var maps = mapIds.map(function (id, k) { return { src: 'mapa' + (k + 1) + '.webp', title: mapTitles[k], open: function () { self.setState({ zoom: k }); } }; });
+    var mapsLoop = maps.concat(maps);
+    var zi = s.zoom;
+    var zoomOpen = zi >= 0;
+
+    var monthlyVal = s.jobs * 4 * s.price;
+    return {
+      cells: cells, miniCells: miniCells, phoneSteps: phoneSteps,
+      chapters: chapters, curChapter: curChapter,
+      pains: pains, audience: audience, modules: mods, bonuses: bonuses,
+      basicItems: basicItems, fullItems: fullItems,
+      dirtPct: dirt, cleanPct: s.clean,
+      lossLabel: loss > 0 ? 'Com essa sujeira: até ' + loss + '% menos energia' : 'Placa limpa: geração recuperada',
+      lossColor: loss > 0 ? '#FFC9A8' : '#8FE3AE',
+      onClean: function (e) { self.setState({ clean: Number(e.target.value) }); },
+      split: s.split, dirtRight: 100 - s.split,
+      onSplit: function (e) { self.setState({ split: Number(e.target.value) }); },
+      questions: questions, quizDone: done, quizTitle: quizTitle, quizText: quizText,
+      jobs: s.jobs, price: s.price, jobsMonth: s.jobs * 4,
+      monthly: this.brl(monthlyVal), yearly: this.brl(monthlyVal * 12),
+      onJobs: function (e) { self.setState({ jobs: Number(e.target.value) }); },
+      onPrice: function (e) { self.setState({ price: Number(e.target.value) }); },
+      faqs: faqs,
+      mapsLoop: mapsLoop, zoomOpen: zoomOpen,
+      zoomSrc: zoomOpen ? maps[zi].src : '', zoomTitle: zoomOpen ? maps[zi].title : '',
+      zoomClose: function () { self.setState({ zoom: -1 }); },
+      zoomPrev: function () { self.setState({ zoom: (zi + 6) % 7 }); },
+      zoomNext: function () { self.setState({ zoom: (zi + 1) % 7 }); },
+      appTabs: appTabs, appFeatures: appFeatures, appClients: appClients, appBars: appBars,
+      appTitle: ['Meus clientes', 'Finanças', 'Novo orçamento'][s.appTab],
+      appIsClients: s.appTab === 0, appIsFin: s.appTab === 1, appIsQuote: s.appTab === 2,
+      checkoutBasico: PROPS.checkoutBasico ?? 'https://pay.kiwify.com.br/lhRPx6z',
+      checkoutCompleto: PROPS.checkoutCompleto ?? 'https://pay.kiwify.com.br/ZJu0nbT'
+    };
+  }
+};
+var app = PetiteVue.reactive({
+  state: null,
+  V: {},
+  setState: function (p) { Object.assign(this.state, p); this.V = Logic.renderVals.call(this); },
+  brl: Logic.brl
+});
+Logic.constructor.call(app, {});
+app.V = Logic.renderVals.call(app);
+PetiteVue.createApp(app).mount('#app');
+</script>
+</body>
+</html>
