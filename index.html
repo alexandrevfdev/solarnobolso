@@ -47,6 +47,21 @@ a{color:#1565C0}a:hover{color:#0D47A1}
 
 .fadeimg{-webkit-mask-image:linear-gradient(180deg,#000 85%,transparent 100%);mask-image:linear-gradient(180deg,#000 85%,transparent 100%)}
 input[type=range]{accent-color:#1565C0;width:100%;height:44px;cursor:pointer}
+
+.app-stage{display:flex;align-items:center;justify-content:center;width:100%;padding:10px 0}
+.phone{position:relative;z-index:2;flex:none;width:292px;height:600px;border-radius:50px;padding:8px;box-sizing:border-box;background:linear-gradient(150deg,#3a4656 0%,#11161d 35%,#0a0d12 65%,#2b3542 100%);box-shadow:inset 0 0 0 1.5px #4a5869,inset 0 0 0 4px #0a0d12,0 40px 80px rgba(0,0,0,0.55),0 0 0 1px rgba(255,255,255,0.05)}
+.phone::before{content:"";position:absolute;right:-3px;top:150px;width:3px;height:70px;border-radius:0 3px 3px 0;background:#2b3542}
+.phone::after{content:"";position:absolute;left:-3px;top:120px;width:3px;height:40px;border-radius:3px 0 0 3px;background:#2b3542;box-shadow:0 56px 0 #2b3542}
+.screen{position:relative;height:100%;border-radius:42px;overflow:hidden;background:#F4F7FB;color:#0B2545;display:flex;flex-direction:column}
+.island{position:absolute;top:10px;left:50%;transform:translateX(-50%);width:90px;height:26px;border-radius:20px;background:#000;z-index:3}
+.app-head{background:linear-gradient(160deg,#0B2545 0%,#13315C 60%,#1B4A85 100%);color:#fff;padding:12px 18px 16px;display:flex;flex-direction:column;gap:14px;border-radius:0 0 22px 22px}
+.statusbar{display:flex;justify-content:space-between;align-items:center;font-size:12px;font-weight:700;padding:2px 10px 0 12px;height:22px}
+.logo-slot{flex:none;width:42px;height:42px;border-radius:12px;border:1.5px dashed rgba(245,178,61,0.9);background:rgba(255,255,255,0.06);color:#F5B23D;font-size:7.5px;font-weight:800;letter-spacing:0.06em;line-height:1.15;display:flex;align-items:center;justify-content:center;text-align:center}
+.home-bar{flex:none;width:108px;height:4px;border-radius:4px;background:rgba(11,37,69,0.35);margin:6px auto 8px}
+.paper{position:relative;z-index:1;flex:none;width:236px;aspect-ratio:210/297;margin-left:18px;transform:rotate(3deg) translateY(10px);background:#fff;color:#0B2545;border-radius:6px;padding:18px;box-sizing:border-box;display:flex;flex-direction:column;box-shadow:0 30px 60px rgba(0,0,0,0.45),0 2px 6px rgba(0,0,0,0.2);font-family:Inter,system-ui,sans-serif}
+.paper-logo{width:74px;height:40px;border:1.5px dashed #9DB8D9;border-radius:6px;background:#F4F7FB;color:#5D7593;font-size:7.5px;font-weight:800;letter-spacing:0.05em;line-height:1.2;display:flex;align-items:center;justify-content:center;text-align:center}
+.paper-row{display:flex;justify-content:space-between;gap:8px;padding:5px 0;border-bottom:1px solid #EEF2F7}
+@media(max-width:720px){.app-stage{flex-direction:column;gap:28px}.paper{margin-left:0;transform:rotate(-2deg);width:260px}}
 </style>
 <style>[v-cloak]{display:none}</style>
 <!-- META PIXEL: cole aqui o código do seu Pixel da Meta -->
@@ -329,7 +344,7 @@ input[type=range]{accent-color:#1565C0;width:100%;height:44px;cursor:pointer}
 <div style="flex: 1 1 400px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
 <div style="align-self: flex-start; background: #F5B23D; color: #1A1300; font-size: 12px; font-weight: 800; letter-spacing: 0.08em; padding: 5px 12px; border-radius: 999px">EXCLUSIVO DO PACOTE COMPLETO</div>
 <h2 style="margin: 0; font-family: Montserrat, sans-serif; font-weight: 900; font-size: clamp(28px, 4vw, 40px); line-height: 1.12">Estamos desenvolvendo o <span style="color: #F5B23D">App Solar no Bolso</span></h2>
-<p style="margin: 0; color: #C9D6E6; font-size: 17px">Um gerencial feito para quem faz limpeza de placas: clientes, agenda, dinheiro e orçamentos, tudo no celular.</p>
+<p style="margin: 0; color: #C9D6E6; font-size: 17px">Um gerencial feito para quem faz limpeza de placas: clientes, agenda, lembretes, fotos, orçamentos, recibos e dinheiro, tudo no celular.</p>
 <template v-for="af in V.appFeatures">
 <div style="display: flex; gap: 12px; align-items: flex-start">
 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#8FE3AE" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 2px"><circle cx="12" cy="12" r="9"></circle><path d="M8 12l3 3 5-6"></path></svg>
@@ -338,19 +353,27 @@ input[type=range]{accent-color:#1565C0;width:100%;height:44px;cursor:pointer}
 </template>
 <div style="background: #13315C; border: 1px solid #24426E; border-radius: 12px; padding: 14px 16px; font-size: 14px; color: #C9D6E6">Em desenvolvimento, com previsão de lançamento para o começo de janeiro de 2027. Quem comprar o Pacote Completo recebe acesso ao app sem custo extra assim que ele for lançado. Telas ilustrativas.</div>
 </div>
-<div style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; align-items: center; gap: 16px">
+<div style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; align-items: center; gap: 18px">
 <div style="display: flex; gap: 8px; flex-wrap: wrap; justify-content: center">
 <template v-for="at in V.appTabs">
 <button type="button" @click="at.pick" :style="at.style">{{ at.label }}</button>
 </template>
 </div>
-<div style="width: 280px; height: 540px; background: #050B14; border-radius: 40px; padding: 12px; box-sizing: border-box; box-shadow: 0 30px 60px rgba(0,0,0,0.45)">
-<div style="background: #F7F9FC; color: #0B2545; border-radius: 30px; height: 100%; overflow: hidden; display: flex; flex-direction: column">
-<div style="background: #0B2545; color: #FFFFFF; padding: 22px 18px 14px; display: flex; flex-direction: column; gap: 2px">
-<div style="font-size: 11px; color: #F5B23D; font-weight: 800; letter-spacing: 0.1em">SOLAR NO BOLSO</div>
-<div style="font-family: Montserrat, sans-serif; font-weight: 800; font-size: 18px">{{ V.appTitle }}</div>
+<div class="app-stage">
+<div class="phone">
+<div class="screen">
+<div class="island"></div>
+<div class="app-head">
+<div class="statusbar"><span>9:41</span><span style="display: flex; gap: 5px; align-items: center"><svg width="16" height="10" viewBox="0 0 16 10" aria-hidden="true"><rect x="0" y="6" width="3" height="4" rx="1" fill="#fff"></rect><rect x="4.3" y="4" width="3" height="6" rx="1" fill="#fff"></rect><rect x="8.6" y="2" width="3" height="8" rx="1" fill="#fff"></rect><rect x="12.9" y="0" width="3" height="10" rx="1" fill="#fff"></rect></svg><svg width="22" height="11" viewBox="0 0 22 11" aria-hidden="true"><rect x="0.5" y="0.5" width="18" height="10" rx="3" fill="none" stroke="#fff" opacity="0.6"></rect><rect x="2" y="2" width="13" height="7" rx="1.6" fill="#fff"></rect><rect x="19.6" y="3.5" width="1.8" height="4" rx="0.9" fill="#fff" opacity="0.6"></rect></svg></span></div>
+<div style="display: flex; align-items: center; gap: 10px">
+<div class="logo-slot">SUA<br>LOGO</div>
+<div style="display: flex; flex-direction: column; min-width: 0">
+<div style="font-size: 10px; color: #F5B23D; font-weight: 800; letter-spacing: 0.1em">SEU NEGÓCIO SOLAR</div>
+<div style="font-family: Montserrat, sans-serif; font-weight: 800; font-size: 17px; line-height: 1.2">{{ V.appTitle }}</div>
 </div>
-<div style="padding: 14px; display: flex; flex-direction: column; gap: 10px; flex: 1">
+</div>
+</div>
+<div style="padding: 12px; display: flex; flex-direction: column; gap: 9px; flex: 1; overflow: hidden">
 <div style="display:contents" v-if="V.appIsClients">
 <template v-for="cl in V.appClients">
 <div style="background: #FFFFFF; border: 1px solid #E3E8F0; border-radius: 12px; padding: 11px 12px; display: flex; flex-direction: column; gap: 3px">
@@ -358,6 +381,30 @@ input[type=range]{accent-color:#1565C0;width:100%;height:44px;cursor:pointer}
 <div style="font-size: 12px; color: #4B5B70">{{ cl.p }} placas · próxima limpeza {{ cl.d }}</div>
 </div>
 </template>
+</div>
+<div style="display:contents" v-if="V.appIsAgenda">
+<template v-for="ag in V.appAgenda">
+<div style="background: #FFFFFF; border: 1px solid #E3E8F0; border-radius: 12px; padding: 10px 12px; display: flex; gap: 10px; align-items: center">
+<div style="flex: none; width: 46px; text-align: center; background: #E8F1FC; border-radius: 8px; padding: 5px 0; font-size: 10px; font-weight: 800; color: #1565C0; line-height: 1.3">{{ ag.d }}<br>{{ ag.h }}</div>
+<div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px">
+<div style="font-weight: 700; font-size: 13px">{{ ag.n }}</div>
+<div style="font-size: 11px; color: #4B5B70">{{ ag.p }} · <span :style="`color: ${ag.c}; font-weight: 700`">{{ ag.st }}</span></div>
+</div>
+</div>
+</template>
+<div style="background: #15803D; color: #FFFFFF; text-align: center; font-weight: 800; font-size: 13px; padding: 11px; border-radius: 12px">Enviar lembrete pelo WhatsApp</div>
+</div>
+<div style="display:contents" v-if="V.appIsPhotos">
+<template v-for="ph in V.appPhotos">
+<div style="background: #FFFFFF; border: 1px solid #E3E8F0; border-radius: 12px; padding: 10px; display: flex; flex-direction: column; gap: 8px">
+<div style="display: flex; gap: 6px">
+<div style="flex: 1; height: 72px; border-radius: 6px; position: relative; overflow: hidden; background-color:#163D70;background-image:repeating-linear-gradient(90deg,transparent 0,transparent calc(25% - 1px),rgba(157,184,217,0.8) 25%),repeating-linear-gradient(0deg,transparent 0,transparent calc(33.33% - 1px),rgba(157,184,217,0.8) 33.33%),linear-gradient(135deg,#2B6CC4,#0e2f57);"><div class="dirt" style="position: absolute; inset: 0"></div><div style="position: absolute; left: 4px; top: 4px; background: #A66C2C; color: #FFFFFF; font-size: 9px; font-weight: 800; padding: 2px 5px; border-radius: 4px">ANTES</div></div>
+<div style="flex: 1; height: 72px; border-radius: 6px; position: relative; overflow: hidden; background-color:#163D70;background-image:repeating-linear-gradient(90deg,transparent 0,transparent calc(25% - 1px),rgba(157,184,217,0.8) 25%),repeating-linear-gradient(0deg,transparent 0,transparent calc(33.33% - 1px),rgba(157,184,217,0.8) 33.33%),linear-gradient(135deg,#2B6CC4,#0e2f57);"><div style="position: absolute; inset: 0; background: linear-gradient(115deg,transparent 20%,rgba(255,255,255,0.28) 45%,transparent 70%)"></div><div style="position: absolute; left: 4px; top: 4px; background: #168C64; color: #FFFFFF; font-size: 9px; font-weight: 800; padding: 2px 5px; border-radius: 4px">DEPOIS</div></div>
+</div>
+<div style="display: flex; justify-content: space-between; font-size: 12px"><strong>{{ ph.n }}</strong><span style="color: #4B5B70">{{ ph.d }}</span></div>
+</div>
+</template>
+<div style="background: #FFFFFF; border: 1px solid #E3E8F0; color: #0B2545; text-align: center; font-weight: 700; font-size: 13px; padding: 11px; border-radius: 12px">Gerar recibo em PDF</div>
 </div>
 <div style="display:contents" v-if="V.appIsFin">
 <div style="background: #FFFFFF; border: 1px solid #E3E8F0; border-radius: 12px; padding: 14px; display: flex; flex-direction: column; gap: 4px">
@@ -387,9 +434,42 @@ input[type=range]{accent-color:#1565C0;width:100%;height:44px;cursor:pointer}
 <div style="background: #FFFFFF; border: 1px solid #E3E8F0; color: #0B2545; text-align: center; font-weight: 700; font-size: 13px; padding: 11px; border-radius: 12px">Baixar em PDF</div>
 </div>
 </div>
+<div class="home-bar"></div>
 </div>
 </div>
-<div style="font-size: 12px; color: #A9B8CB">Toque nas abas para ver as telas</div>
+<div class="paper" aria-label="Exemplo de orçamento impresso com a sua logo">
+<div style="height: 5px; background: linear-gradient(90deg,#1565C0,#F5B23D); margin: -18px -18px 14px; border-radius: 6px 6px 0 0"></div>
+<div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 10px">
+<div class="paper-logo">SUA LOGO<br>AQUI</div>
+<div style="text-align: right">
+<div style="font-family: Montserrat, sans-serif; font-weight: 900; font-size: 13px; letter-spacing: 0.06em; color: #1565C0">ORÇAMENTO</div>
+<div style="font-size: 9px; color: #4B5B70">Nº 0042 · 13/01/2027</div>
+</div>
+</div>
+<div style="margin-top: 10px; font-size: 10px; font-weight: 800">Seu Negócio Solar</div>
+<div style="font-size: 8.5px; color: #4B5B70">Limpeza de placas solares · (00) 00000-0000</div>
+<div style="height: 1px; background: #E3E8F0; margin: 10px 0"></div>
+<div style="font-size: 8px; color: #4B5B70; letter-spacing: 0.08em; font-weight: 700">CLIENTE</div>
+<div style="font-size: 10px; font-weight: 700">Padaria Centro</div>
+<div style="font-size: 8.5px; color: #4B5B70">Rua das Flores, 120 · 12 placas</div>
+<div style="margin-top: 10px; display: flex; flex-direction: column; font-size: 9px">
+<div class="paper-row" style="font-weight: 700; color: #4B5B70; font-size: 8px; letter-spacing: 0.06em"><span>SERVIÇO</span><span>VALOR</span></div>
+<div class="paper-row"><span>Taxa de visita</span><span>R$ 80,00</span></div>
+<div class="paper-row"><span>Limpeza · 12 placas × R$ 12</span><span>R$ 144,00</span></div>
+<div class="paper-row"><span>Adicional · telhado alto</span><span>R$ 40,00</span></div>
+</div>
+<div style="margin-top: 10px; background: #E8F1FC; border-radius: 6px; padding: 8px 10px; display: flex; justify-content: space-between; align-items: center">
+<span style="font-size: 9px; font-weight: 800; letter-spacing: 0.06em">TOTAL</span>
+<span style="font-family: Montserrat, sans-serif; font-weight: 900; font-size: 15px; color: #1565C0">R$ 264,00</span>
+</div>
+<div style="margin-top: 8px; font-size: 8px; color: #4B5B70">Validade: 7 dias · Pagamento: Pix ou dinheiro</div>
+<div style="margin-top: auto; padding-top: 18px; display: flex; flex-direction: column; align-items: center; gap: 3px">
+<div style="width: 70%; height: 1px; background: #0B2545"></div>
+<div style="font-size: 8px; color: #4B5B70">Assinatura do responsável</div>
+</div>
+</div>
+</div>
+<div style="font-size: 13px; color: #C9D6E6; text-align: center; max-width: 440px">Toque nas abas para ver as telas. O orçamento sai em PDF com a <strong style="color: #F5B23D">sua logo</strong>, pronto para imprimir ou mandar no WhatsApp.</div>
 </div>
 </div>
 </section>
@@ -588,7 +668,7 @@ var Logic = {
       ['Preciso ter experiência?', 'Não. O e-book foi pensado para quem nunca trabalhou com energia solar. A limpeza é o serviço mais simples do setor.'],
       ['Preciso de curso técnico ou certificação?', 'Para a limpeza, o e-book cobre o essencial e recomenda um curso de NR-35 para trabalho em altura. Instalação e serviços elétricos são outra coisa: o material deixa claro onde parar.'],
       ['O e-book garante que vou ganhar dinheiro?', 'Não. Ele ensina o serviço e como conseguir clientes. O resultado depende da sua dedicação e da procura na sua região.'],
-      ['O que é o App Solar no Bolso?', 'Um aplicativo que estamos desenvolvendo para controle de clientes, agenda, finanças e orçamentos enviados direto ao cliente. Ele é exclusivo do Pacote Completo: quem compra recebe o acesso sem custo extra quando ele for lançado. A previsão de lançamento é o começo de janeiro de 2027.'],
+      ['O que é o App Solar no Bolso?', 'Um aplicativo que estamos desenvolvendo para controle de clientes, agenda com lembretes pelo WhatsApp, fotos de antes e depois, orçamentos e recibos em PDF, finanças e checklist de segurança. Ele é exclusivo do Pacote Completo: quem compra recebe o acesso sem custo extra quando ele for lançado. A previsão de lançamento é o começo de janeiro de 2027.'],
       ['E se eu não gostar?', 'Você tem 7 dias de garantia. Pediu dentro do prazo, recebe 100% do valor de volta.']
     ];
     var faqs = faqData.map(function (f, idx) {
@@ -598,14 +678,20 @@ var Logic = {
 
     var tabOn = 'min-height: 44px; padding: 0 16px; border-radius: 999px; font: inherit; font-size: 14px; font-weight: 700; cursor: pointer; background: #F5B23D; color: #1A1300; border: 2px solid #F5B23D;';
     var tabOff = 'min-height: 44px; padding: 0 16px; border-radius: 999px; font: inherit; font-size: 14px; font-weight: 700; cursor: pointer; background: transparent; color: #FFFFFF; border: 2px solid #3A5A86;';
-    var appTabs = ['Clientes', 'Finanças', 'Orçamento'].map(function (l, k) { return { label: l, style: s.appTab === k ? tabOn : tabOff, pick: function () { self.setState({ appTab: k }); } }; });
+    var appTabs = ['Clientes', 'Agenda', 'Fotos', 'Finanças', 'Orçamento'].map(function (l, k) { return { label: l, style: s.appTab === k ? tabOn : tabOff, pick: function () { self.setState({ appTab: k }); } }; });
     var appFeatures = [
       ['Controle de clientes:', 'cadastro, endereço, número de placas e histórico de cada limpeza.'],
-      ['Agenda inteligente:', 'lembrete da próxima limpeza de cada cliente do plano de manutenção.'],
+      ['Agenda inteligente:', 'veja os serviços da semana e a data da próxima limpeza de cada cliente.'],
+      ['Lembrete pelo WhatsApp:', 'mensagem pronta avisando o cliente que está na hora de limpar de novo.'],
+      ['Fotos de antes e depois:', 'guarde no cadastro de cada cliente e envie direto pelo WhatsApp.'],
+      ['Orçamento em segundos:', 'monte o valor e envie para o cliente pelo WhatsApp ou em PDF.'],
+      ['Recibo em PDF:', 'gere o recibo no fim do serviço, já com seu nome e os dados do cliente.'],
       ['Finanças do negócio:', 'entradas, gastos e lucro do mês, sem planilha.'],
-      ['Orçamento em segundos:', 'monte o valor e envie para o cliente pelo WhatsApp ou em PDF.']
+      ['Checklist de segurança:', 'confira os itens antes de subir no telhado, em todo serviço.']
     ].map(function (f) { return { t: f[0], d: f[1] }; });
     var appClients = [['Residência Jardim', 12, '15/01'], ['Padaria Centro', 24, '22/01'], ['Sítio Boa Vista', 30, '03/02'], ['Casa Vila Nova', 8, '10/02']].map(function (c) { return { n: c[0], p: c[1], d: c[2] }; });
+    var appAgenda = [['SEG 13', '08:00', 'Residência Jardim', '12 placas', 'Confirmado', '#15803D'], ['QUA 15', '07:30', 'Padaria Centro', '24 placas', 'Confirmado', '#15803D'], ['SEX 17', '16:00', 'Casa Vila Nova', '8 placas', 'Lembrete enviado', '#B7791F'], ['SÁB 18', '08:00', 'Sítio Boa Vista', '30 placas', 'Aguardando', '#4B5B70']].map(function (a) { return { d: a[0], h: a[1], n: a[2], p: a[3], st: a[4], c: a[5] }; });
+    var appPhotos = [['Residência Jardim', '13/01'], ['Padaria Centro', '15/01']].map(function (f) { return { n: f[0], d: f[1] }; });
     var appBars = [['Ago', 35], ['Set', 48], ['Out', 55], ['Nov', 70], ['Dez', 88], ['Jan', 100]].map(function (b) { return { m: b[0], h: b[1] }; });
 
     var mapIds = ['a4b56f3d125761e6de24c02aced70491', 'f4929bb7051d47366de1d312231feb28', 'de618ef5dfac02258785184d563fbefd', 'd7f0b99a9d233f67a0bf5e95914eda2b', '82183740a3d460c77b0a5d02a7823e01', '4ce75b0d076ae5c9e5831b53f33c169d', 'c3060921f3223436f088a93874ea9a36'];
@@ -639,8 +725,9 @@ var Logic = {
       zoomPrev: function () { self.setState({ zoom: (zi + 6) % 7 }); },
       zoomNext: function () { self.setState({ zoom: (zi + 1) % 7 }); },
       appTabs: appTabs, appFeatures: appFeatures, appClients: appClients, appBars: appBars,
-      appTitle: ['Meus clientes', 'Finanças', 'Novo orçamento'][s.appTab],
-      appIsClients: s.appTab === 0, appIsFin: s.appTab === 1, appIsQuote: s.appTab === 2,
+      appTitle: ['Meus clientes', 'Agenda da semana', 'Antes e depois', 'Finanças', 'Novo orçamento'][s.appTab],
+      appIsClients: s.appTab === 0, appIsAgenda: s.appTab === 1, appIsPhotos: s.appTab === 2, appIsFin: s.appTab === 3, appIsQuote: s.appTab === 4,
+      appAgenda: appAgenda, appPhotos: appPhotos,
       checkoutBasico: PROPS.checkoutBasico ?? 'https://pay.kiwify.com.br/lhRPx6z',
       checkoutCompleto: PROPS.checkoutCompleto ?? 'https://pay.kiwify.com.br/ZJu0nbT'
     };
