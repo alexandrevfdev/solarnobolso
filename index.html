@@ -72,7 +72,7 @@ input[type=range]{accent-color:#1565C0;width:100%;height:44px;cursor:pointer}
 <script>
 !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
 fbq('init','1807353710478154');fbq('track','PageView');
-document.addEventListener('click',function(ev){var a=ev.target.closest&&ev.target.closest('a[href*="pay.kiwify.com.br"]');if(!a)return;if(a.id==='btn-basico')return;var u=a.href.indexOf('4nIpgED')>-1,c=u||a.href.indexOf('ZJu0nbT')>-1;fbq('trackCustom','CliqueComprar',{content_name:u?'Completo Upgrade Popup':(c?'Pacote Completo':'Pacote Basico'),value:u?34.90:(c?37.90:27.90),currency:'BRL'});},true);
+document.addEventListener('click',function(ev){var a=ev.target.closest&&ev.target.closest('a[href*="pay.kiwify.com.br"]');if(!a)return;if(a.id==='btn-basico')return;var u=a.href.indexOf('4nIpgED')>-1,c=u||a.href.indexOf('ZJu0nbT')>-1;fbq('trackCustom','CliqueComprar',{content_name:u?'Completo Upgrade Popup':(c?'Pacote Completo':'Pacote Basico'),value:u?30.90:(c?37.90:27.90),currency:'BRL'});},true);
 </script>
 <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1807353710478154&ev=PageView&noscript=1"/></noscript>
 <!-- End Meta Pixel Code -->
@@ -705,20 +705,20 @@ PetiteVue.createApp(app).mount('#app');
 <div style="position:relative;background:#FFFFFF;max-width:420px;width:100%;border-radius:18px;padding:26px 22px 20px;text-align:center;box-shadow:0 24px 60px rgba(0,0,0,0.35);font-family:Inter,system-ui,sans-serif;color:#0B2545">
 <button type="button" id="up-close" aria-label="Fechar" style="position:absolute;top:8px;right:12px;background:none;border:0;font-size:26px;line-height:1;color:#8A97A8;cursor:pointer">&times;</button>
 <div style="display:inline-block;background:#FDECEC;color:#B71C1C;font-size:12px;font-weight:800;padding:5px 12px;border-radius:999px;letter-spacing:0.04em">ESPERA! OFERTA ESPECIAL</div>
-<h3 id="up-title" style="margin:12px 0 6px;font-family:Montserrat,sans-serif;font-weight:900;font-size:24px;line-height:1.15">Leve o <span style="color:#1565C0">Pacote Completo</span> por só R$ 7 a mais</h3>
+<h3 id="up-title" style="margin:12px 0 6px;font-family:Montserrat,sans-serif;font-weight:900;font-size:24px;line-height:1.15">Leve o <span style="color:#1565C0">Pacote Completo</span> por só R$ 3 a mais</h3>
 <p style="margin:0 0 10px;color:#4B5B70;font-size:15px">E-book + 4 bônus + acesso ao App Solar no Bolso.</p>
 <img src="kit.webp" alt="Pacote Completo Solar no Bolso" style="width:100%;max-width:300px;height:auto;display:block;margin:0 auto 8px">
 <div style="font-size:15px;color:#6B7A8F;font-weight:700">De <s style="color:#C62828">R$ 37,90</s> por apenas</div>
-<div style="font-family:Montserrat,sans-serif;font-weight:900;font-size:44px;color:#1565C0;line-height:1.05">R$ 34<span style="font-size:22px">,90</span></div>
+<div style="font-family:Montserrat,sans-serif;font-weight:900;font-size:44px;color:#1565C0;line-height:1.05">R$ 30<span style="font-size:22px">,90</span></div>
 <div style="font-size:12px;color:#4B5B70;margin-bottom:14px">pagamento único · acesso imediato</div>
-<a href="https://pay.kiwify.com.br/4nIpgED" class="cta" style="font-family:Inter,system-ui,sans-serif;color:#FFFFFF;text-decoration:none;font-weight:800;font-size:17px;padding:16px;border-radius:12px;display:block">SIM, QUERO O COMPLETO POR R$ 34,90</a>
+<a href="https://pay.kiwify.com.br/4nIpgED" class="cta" style="font-family:Inter,system-ui,sans-serif;color:#FFFFFF;text-decoration:none;font-weight:800;font-size:17px;padding:16px;border-radius:12px;display:block">SIM, QUERO O COMPLETO POR R$ 30,90</a>
 <a href="https://pay.kiwify.com.br/lhRPx6z" id="up-no" style="display:block;margin-top:12px;color:#6B7A8F;font-size:13px;text-decoration:underline">Não, quero só o básico por R$ 27,90</a>
 </div>
 </div>
 <script>
 (function(){
 var m=document.getElementById('up-modal');
-function open(){m.style.display='flex';document.body.style.overflow='hidden';try{fbq('trackCustom','PopupUpgradeAberto',{value:34.90,currency:'BRL'})}catch(e){}}
+function open(){m.style.display='flex';document.body.style.overflow='hidden';try{fbq('trackCustom','PopupUpgradeAberto',{value:30.90,currency:'BRL'})}catch(e){}}
 function close(){m.style.display='none';document.body.style.overflow=''}
 document.addEventListener('click',function(ev){var a=ev.target.closest&&ev.target.closest('#btn-basico');if(!a)return;ev.preventDefault();open();},true);
 document.getElementById('up-close').addEventListener('click',close);
